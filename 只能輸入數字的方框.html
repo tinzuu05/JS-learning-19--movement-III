@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>只能輸入數字的方框</title>
+	<script>
+		window.onload=function()
+		{
+			var oTxt=document.getElementById('txt1');
+
+			oTxt.onkeydown=function (ev)
+			{
+				var oEvent= ev||event;
+
+				//alert(oEvent.keyCode);
+				//0- keyCode 48
+				//9- keyCode 57
+				if(oEvent.keyCode!=8 && (oEvent.keyCode<48 || oEvent.keyCode>57))
+				{   
+					return false;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1">
+</body>
+</html>

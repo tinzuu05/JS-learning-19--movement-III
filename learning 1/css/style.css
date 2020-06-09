@@ -1,0 +1,8 @@
+.div1
+{
+	position:absolute;
+	width:80px;
+	background: #ccc;
+	border:1px solid black;
+	display:none;
+}
